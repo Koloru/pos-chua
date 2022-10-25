@@ -10,10 +10,8 @@ interface props {
 export const Sidebar = ({ visible }: props) => {
 	return (
 		<div
-			className={`flex flex-col fixed rounded-tl-2xl rounded-bl-2xl shadow-2xl pt-1 h-[90vh] lg:w-[400px] md:w-[200px] max-h-[70%] right-0 top-20 ease-in-out duration-300 
-			${
-				visible ? "translate-x-0" : "translate-x-full"
-			}`}
+			className={`flex flex-col fixed rounded-tl-2xl rounded-bl-2xl shadow-2xl pt-1 h-[90vh] w-[300px] md:w-[40%] xl:w-[25%] max-h-[70%] right-0 top-20 ease-in-out duration-300 
+			${visible ? "translate-x-0" : "translate-x-full"}`}
 		>
 			{/* Header */}
 			<div className='flex justify-between items-center px-5 py-2 border-b-[1px] border-gray-200'>
