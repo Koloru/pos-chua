@@ -27,28 +27,9 @@ export const Sidebar = ({ visible }: props) => {
 			</div>
 
 			{/* Items */}
-			<div className='overflow-auto'>
+			<div className='overflow-auto min-h-[70%]'>
 				<SideBarItem itemName='Burger' price={45} />
-				<SideBarItem itemName='Burger' price={45} />
-				<SideBarItem itemName='Burger' price={45} />
-				<SideBarItem itemName='Burger' price={45} />
-				<SideBarItem itemName='Burger' price={45} />
-				<SideBarItem itemName='Burger' price={45} />
-				<SideBarItem itemName='Burger' price={45} />
-				<SideBarItem itemName='Burger' price={45} />
-				<SideBarItem itemName='Burger' price={45} />
-				<SideBarItem itemName='Burger' price={45} />
-				<SideBarItem itemName='Burger' price={45} />
-				<SideBarItem itemName='Burger' price={45} />
-				<SideBarItem itemName='Burger' price={45} />
-				<SideBarItem itemName='Burger' price={45} />
-				<SideBarItem itemName='Burger' price={45} />
-				<SideBarItem itemName='Burger' price={45} />
-				<SideBarItem itemName='Burger' price={45} />
-				<SideBarItem itemName='Burger' price={45} />
-				<SideBarItem itemName='Burger' price={45} />
-				<SideBarItem itemName='Burger' price={45} />
-				<SideBarItem itemName='Burger' price={45} />
+
 			</div>
 
 			<div className='flex flex-col px-5 gap-y-5 pt-4 pb-10 border-t-[1px] border-gray-200'>
