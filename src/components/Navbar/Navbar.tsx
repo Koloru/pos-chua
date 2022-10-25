@@ -6,22 +6,30 @@ import { Sidebar } from "../Sidebar";
 
 // Other libaries
 // Icons
-
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoMdClose } from "react-icons/io";
 
 export const Navbar = () => {
+	const [showCart, setshowCart] = useState(false);
 	return (
-		<div className='navbar bg-red-500'>
+		<div className='flex justify-between px-5 py-2 bg-[#3e517a]'>
 			<div className='flex-1'>
 				{/* Todo Put Icon here  */}
 				<Link href='/hello'>
-					<button className='btn btn-ghost normal-case text-xl'>
-						Point of Sales
+					<button className='btn btn-ghost normal-case text-xl text-[#A8E0FF]'>
+						Genshin Impact
 					</button>
 				</Link>
 			</div>
-			<div className='flex-none'>
-				<button className='btn btn-square btn-ghost'>--------</button>
-				<Sidebar />
+			<div className='flex justify-center items-center'>
+				<button
+					onClick={() => setshowCart(!showCart)}
+					className='text-white text-2xl hover:bg-[#f0f3f3f3] p-1 rounded duration-300'
+				>
+					{showCart ? <IoMdClose /> : <GiHamburgerMenu />}
+				</button>
+
+				{showCart ? <Sidebar /> : <></>}
 			</div>
 		</div>
 	);

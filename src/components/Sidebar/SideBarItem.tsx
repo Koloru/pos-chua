@@ -2,6 +2,9 @@ interface Props {
 	itemName: string;
 	price: number;
 }
+
+// Todo add remove item, increment, decrement
+// Maybe rework the design for user experience
 const SideBarItem = ({ itemName, price }: Props) => {
 	return (
 		<div className='flex flex-col border-gray-200 border-b-2 py-4 px-5 font-bold'>
