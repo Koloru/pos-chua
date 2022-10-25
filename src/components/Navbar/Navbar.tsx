@@ -15,7 +15,7 @@ export const Navbar = () => {
 		<div className='flex justify-between px-5 py-2 bg-[#3e517a]'>
 			<div className='flex-1'>
 				{/* Todo Put Icon here  */}
-				<Link href='/hello'>
+				<Link href='/'>
 					<button className='btn btn-ghost normal-case text-xl text-[#A8E0FF]'>
 						Genshin Impact
 					</button>
