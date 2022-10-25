@@ -3,9 +3,18 @@ import SideBarItem from "./SideBarItem";
 import { BsFillCartXFill, BsFillCartFill } from "react-icons/bs";
 import { FaMoneyBillWaveAlt } from "react-icons/fa";
 
-export const Sidebar = () => {
+interface props {
+	visible: boolean;
+}
+
+export const Sidebar = ({ visible }: props) => {
 	return (
-		<div className='flex flex-col rounded-tl-2xl rounded-bl-2xl shadow-2xl pt-1 h-[90vh] lg:w-[400px] md:w-[200px] max-h-[80%] absolute z-10 right-0 top-20'>
+		<div
+			className={`flex flex-col fixed rounded-tl-2xl rounded-bl-2xl shadow-2xl pt-1 h-[90vh] lg:w-[400px] md:w-[200px] max-h-[70%] right-0 top-20 ease-in-out duration-300 
+			${
+				visible ? "translate-x-0" : "translate-x-full"
+			}`}
+		>
 			{/* Header */}
 			<div className='flex justify-between items-center px-5 py-2 border-b-[1px] border-gray-200'>
 				<div>

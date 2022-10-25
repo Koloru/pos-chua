@@ -12,7 +12,7 @@ import { IoMdClose } from "react-icons/io";
 export const Navbar = () => {
 	const [showCart, setshowCart] = useState(false);
 	return (
-		<div className='flex justify-between px-5 py-2 bg-[#3e517a]'>
+		<div className='flex justify-between px-5 py-2 bg-[#3e517a] overflow-x-hidden'>
 			<div className='flex-1'>
 				{/* Todo Put Icon here  */}
 				<Link href='/'>
@@ -29,7 +29,7 @@ export const Navbar = () => {
 					{showCart ? <IoMdClose /> : <GiHamburgerMenu />}
 				</button>
 
-				{showCart ? <Sidebar /> : <></>}
+				<Sidebar visible={showCart} /> 
 			</div>
 		</div>
 	);
