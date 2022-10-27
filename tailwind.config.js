@@ -8,9 +8,6 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				sans: ["Lato", "sans-serif"],
-			},
-			screens: {
-				'xs': '320px'
 			}
 		},
 		plugins: [require("daisyui")],
