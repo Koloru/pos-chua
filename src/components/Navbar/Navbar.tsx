@@ -6,10 +6,10 @@ import Link from "next/link";
 // Component impors
 import { NavMenu } from "./NavMenu";
 
-
 // Icons
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
+import logo from "../../../public/logo.png";
 
 export const Navbar = () => {
 	const [showNav, setShowNav] = useState(false);
@@ -18,8 +18,9 @@ export const Navbar = () => {
 			<div className='flex-1'>
 				{/* Todo Put Icon here  */}
 				<Link href='/'>
-					<button className='btn btn-ghost normal-case text-xl text-[#A8E0FF]'>
-						Genshin Impact
+					<button className='flex gap-2 items-center btn btn-ghost normal-case text-xl text-[#A8E0FF]'>
+						<Image src={logo} width={30} height={30} />
+						<span>Kenneth</span>
 					</button>
 				</Link>
 			</div>
@@ -31,7 +32,7 @@ export const Navbar = () => {
 					{showNav ? <IoMdClose /> : <GiHamburgerMenu />}
 				</button>
 			</div>
-			<NavMenu visible={showNav}/>
+			<NavMenu visible={showNav} />
 		</div>
 	);
 };
