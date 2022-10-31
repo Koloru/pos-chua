@@ -29,7 +29,7 @@ export const Footer = () => {
 				</Link>
 
 				{category.map((category) => (
-					<Link href={`/category/${category}`} key={category}>
+					<Link key={category+'1'} href={`/category/${category}`} >
 						<button
 							className={`p-4 border-t-4  ${
 								router.asPath === "/category/" + category
