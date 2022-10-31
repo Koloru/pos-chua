@@ -7,7 +7,7 @@ import { BsFillCartFill, BsFillCartXFill } from "react-icons/bs";
 import { IoMdClose } from "react-icons/io";
 
 // Categories
-import { category } from "../../../backend/category.json";
+import Data  from "../../../backend/category.json";
 import Router, { useRouter } from "next/router";
 
 export const Footer = () => {
@@ -28,7 +28,7 @@ export const Footer = () => {
 					</button>
 				</Link>
 
-				{category.map((category) => (
+				{Data.category.map((category) => (
 					<Link key={category+'1'} href={`/category/${category}`} >
 						<button
 							className={`p-4 border-t-4  ${

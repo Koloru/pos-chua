@@ -19,7 +19,7 @@ export const Navbar = () => {
 				{/* Todo Put Icon here  */}
 				<Link href='/'>
 					<button className='flex gap-2 items-center btn btn-ghost normal-case text-xl text-[#A8E0FF]'>
-						<Image src={logo} width={30} height={30} />
+						<Image src={logo} width={30} height={30} alt="Kenneth Dog Logo"/>
 						<span>Kenneth</span>
 					</button>
 				</Link>
