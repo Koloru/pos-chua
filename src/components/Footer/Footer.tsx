@@ -12,14 +12,14 @@ import Router, { useRouter } from "next/router";
 
 export const Footer = () => {
 	const [showCart, setshowCart] = useState(false);
-	const { asPath } = useRouter();
+	const router = useRouter();
 	return (
 		<div className='flex justify-between w-full fixed bottom-0 bg-[#3e517a] px-5  text-white'>
 			<div className='flex flex-wrap gap-10 -mb-px text-md  text-center'>
 				<Link href='/'>
 					<button
 						className={`p-4 ${
-							asPath === "/"
+							router.asPath === "/"
 								? "border-[#A8E0FF] font-bold"
 								: "border-transparent"
 						} border-t-4  `}
@@ -29,11 +29,10 @@ export const Footer = () => {
 				</Link>
 
 				{category.map((category) => (
-					<Link href={`/category/${category}`}>
+					<Link href={`/category/${category}`} key={category}>
 						<button
-							key={category}
 							className={`p-4 border-t-4  ${
-								asPath === "/category/" + category
+								router.asPath === "/category/" + category
 									? "border-[#A8E0FF] font-bold"
 									: "border-transparent"
 							} hover:border-[#A8E0FF] hover:text-gray-300 capitalize`}
