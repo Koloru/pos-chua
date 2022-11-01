@@ -1,3 +1,15 @@
 {
-  "category": ["pizza","pasta","beverages","Vegetables","steak","Garlic","alcohol"]
+  "category": ["poultry","pasta","beverages","Vegetables","steak","Garlic","alcohol"],
+  "items":[{
+    "id": "0",
+    "name": "chicken joy",
+    "price": 200,
+    "category": "poultry"
+  },{
+    "id": "1",
+    "name": "hawaiian pizza",
+    "price": 300,
+    "category": "pizza"
+  }]
+
 }

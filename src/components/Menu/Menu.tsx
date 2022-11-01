@@ -1,52 +1,12 @@
 import { MenuItem } from "./MenuItem";
+import Data from '../../../backend/category.json'
 
 export const Menu = () => {
+  const {items} = Data
 	return <div className="flex gap-2 flex-wrap overflow-auto justify-center py-20">
-    <MenuItem category="Pizza" name="Chargrilled Mackerel With Sweet And Sour Beetroot" price={200}/>
-    <MenuItem category="Pizza" name="Chicken Joy" price={200}/>
-    <MenuItem category="Pizza" name="Soup" price={200}/>
-    <MenuItem category="Pizza" name="Chargrilled Mackerel With Sweet And Sour Beetroot" price={200}/>
-    <MenuItem category="Pizza" name="Chicken Joy" price={200}/>
-    <MenuItem category="Pizza" name="Soup" price={200}/>
-    <MenuItem category="Pizza" name="Chargrilled Mackerel With Sweet And Sour Beetroot" price={200}/>
-    <MenuItem category="Pizza" name="Chicken Joy" price={200}/>
-    <MenuItem category="Pizza" name="Soup" price={200}/>
-    <MenuItem category="Pizza" name="Chargrilled Mackerel With Sweet And Sour Beetroot" price={200}/>
-    <MenuItem category="Pizza" name="Chicken Joy" price={200}/>
-    <MenuItem category="Pizza" name="Soup" price={200}/>
-    <MenuItem category="Pizza" name="Chargrilled Mackerel With Sweet And Sour Beetroot" price={200}/>
-    <MenuItem category="Pizza" name="Chicken Joy" price={200}/>
-    <MenuItem category="Pizza" name="Soup" price={200}/>
-    <MenuItem category="Pizza" name="Chargrilled Mackerel With Sweet And Sour Beetroot" price={200}/>
-    <MenuItem category="Pizza" name="Chicken Joy" price={200}/>
-    <MenuItem category="Pizza" name="Soup" price={200}/>
-    <MenuItem category="Pizza" name="Chargrilled Mackerel With Sweet And Sour Beetroot" price={200}/>
-    <MenuItem category="Pizza" name="Chicken Joy" price={200}/>
-    <MenuItem category="Pizza" name="Soup" price={200}/>
-    <MenuItem category="Pizza" name="Chargrilled Mackerel With Sweet And Sour Beetroot" price={200}/>
-    <MenuItem category="Pizza" name="Chicken Joy" price={200}/>
-    <MenuItem category="Pizza" name="Soup" price={200}/>
-    <MenuItem category="Pizza" name="Chargrilled Mackerel With Sweet And Sour Beetroot" price={200}/>
-    <MenuItem category="Pizza" name="Chicken Joy" price={200}/>
-    <MenuItem category="Pizza" name="Soup" price={200}/>
-    <MenuItem category="Pizza" name="Chargrilled Mackerel With Sweet And Sour Beetroot" price={200}/>
-    <MenuItem category="Pizza" name="Chicken Joy" price={200}/>
-    <MenuItem category="Pizza" name="Soup" price={200}/>
-    <MenuItem category="Pizza" name="Chargrilled Mackerel With Sweet And Sour Beetroot" price={200}/>
-    <MenuItem category="Pizza" name="Chicken Joy" price={200}/>
-    <MenuItem category="Pizza" name="Soup" price={200}/>
-    <MenuItem category="Pizza" name="Chargrilled Mackerel With Sweet And Sour Beetroot" price={200}/>
-    <MenuItem category="Pizza" name="Chicken Joy" price={200}/>
-    <MenuItem category="Pizza" name="Soup" price={200}/>
-    <MenuItem category="Pizza" name="Chargrilled Mackerel With Sweet And Sour Beetroot" price={200}/>
-    <MenuItem category="Pizza" name="Chicken Joy" price={200}/>
-    <MenuItem category="Pizza" name="Soup" price={200}/>
-    <MenuItem category="Pizza" name="Chargrilled Mackerel With Sweet And Sour Beetroot" price={200}/>
-    <MenuItem category="Pizza" name="Chicken Joy" price={200}/>
-    <MenuItem category="Pizza" name="Soup" price={200}/>
-    <MenuItem category="Pizza" name="Chargrilled Mackerel With Sweet And Sour Beetroot" price={200}/>
-    <MenuItem category="Pizza" name="Chicken Joy" price={200}/>
-    <MenuItem category="Pizza" name="Soup" price={200}/>
+    {items.map((item)=> (
+      <MenuItem category={item.category} name={item.name} price={item.price}/>
+    ))}
     
   </div>;
 };
