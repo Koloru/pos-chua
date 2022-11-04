@@ -10,6 +10,6 @@ module.exports = {
 				sans: ["Lato", "sans-serif"],
 			}
 		},
-		plugins: [require("daisyui")],
+		plugins: [],
 	},
 };

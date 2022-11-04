@@ -12,15 +12,7 @@ export const NavMenu = ({ visible }: props) => {
 			${visible ? "translate-x-0" : "translate-x-full"} bg-[#3e517a]`}
 		>
 			<NavItem directory='history' name="History" />
-			<NavItem directory='manage-items' name="Manage Items" />
-			<NavItem directory='manage-items' name="Manage Items" />
-			<NavItem directory='manage-items' name="Manage Items" />
-			<NavItem directory='manage-items' name="Manage Items" />
-			<NavItem directory='manage-items' name="Manage Items" />
-			<NavItem directory='manage-items' name="Manage Items" />
-			<NavItem directory='manage-items' name="Manage Items" />
-			<NavItem directory='manage-items' name="Manage Items" />
-      
+			<NavItem directory='admin' name="Admin Panel" />
 		</div>
 	);
 };
